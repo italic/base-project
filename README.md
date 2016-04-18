@@ -2,5 +2,5 @@
 ![status](https://img.shields.io/badge/status-beta-yellow.svg?style=flat-square)
 ![madewith](https://img.shields.io/badge/made%20with-gulp-brightgreen.svg?style=flat-square)
 
-# kreator
-Kreator is a base project for simple cases websites, with a basic setting for gulp, stylus, javascript.
+# base-project
+This is a base project for simple cases websites, with a basic setting for gulp, stylus, javascript.
