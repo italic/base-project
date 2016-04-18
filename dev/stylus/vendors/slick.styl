@@ -1,0 +1,107 @@
+/* Slider */
+.slick-slider
+	position relative
+	display block
+	box-sizing border-box
+	user-select none
+	-webkit-touch-callout none
+	touch-action pan-y
+	-webkit-tap-highlight-color transparent
+
+	.slick-track
+	.slick-list
+		transform translate3d(0, 0, 0)
+
+.slick-list
+	position relative
+	display block
+	overflow hidden
+	margin 0
+	padding 0
+
+.slick-list:focus
+	outline none
+
+.slick-list.dragging
+	cursor pointer
+	cursor hand
+
+.slick-track
+	position relative
+	top 0
+	left 0
+	display block
+
+.slick-track
+	&::before
+	&::after
+		display table
+		content ''
+
+.slick-track:after
+	clear both
+
+.slick-loading .slick-track
+	visibility hidden
+
+.slick-slide
+	display none
+	float left
+	height 100%
+	min-height 1px
+	outline 0
+
+	img
+		display block
+
+	&.slick-loading img
+		display none
+
+	&.dragging img
+		pointer-events none
+
+.slick-initialized .slick-slide
+	display block
+
+.slick-loading .slick-slide
+	visibility hidden
+
+.slick-vertical .slick-slide
+	display block
+	height auto
+	border 1px solid transparent
+
+.slick-arrow.slick-hidden
+	display none
+
+.slick-dots
+	li
+		display inline-block
+		position relative
+		margin 0 5px
+
+	button
+		border 0
+		outline none
+		font 0/0 a
+		size(20px)
+		padding 5px
+		cursor pointer
+		color transparent
+		background transparent
+
+		&::before
+			content ""
+			position absolute
+			font-size 6px
+			border-radius 50%
+			top 0
+			left 0
+			size(20px)
+			text-align center
+			opacity .25
+			background #000
+
+	.slick-active
+		button::before
+			opacity 1
