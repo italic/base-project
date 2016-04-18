@@ -11,11 +11,11 @@ module.exports = {
 		tasks: './dev/tasks/'
 	},
 	dist: {
-		styles: './dist/assets/css/',
-		scripts: './dist/assets/js/',
-		fonts: './dist/assets/fonts/',
-		images: './dist/assets/images/',
-		maps: './dist/assets/maps/'
+		styles: './www/assets/css/',
+		scripts: './www/assets/js/',
+		fonts: './www/assets/fonts/',
+		images: './www/assets/images/',
+		maps: './www/assets/maps/'
 	},
 	tmp: './tmp/'
 };
