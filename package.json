@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmmanuelBeziat/kreator.git"
+    "url": "git+https://github.com/italic/kreator.git"
   },
   "keywords": [
     "npm",
@@ -17,12 +17,12 @@
     "gulp",
     "bower"
   ],
-  "author": "EmmanuelBeziat",
+  "author": "italic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EmmanuelBeziat/kreator/issues"
+    "url": "https://github.com/italic/kreator/issues"
   },
-  "homepage": "https://github.com/EmmanuelBeziat/kreator#readme",
+  "homepage": "https://github.com/italic/kreator#readme",
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",
