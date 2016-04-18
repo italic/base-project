@@ -1,15 +1,15 @@
 {
-  "name": "kreator",
+  "name": "base-project",
   "version": "1.0.0",
   "description": "Kreator is a base project for simple cases websites, with a basic setting for gulp, stylus, javascript.",
-  "main": "kreator.js",
+  "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/italic/kreator.git"
+    "url": "git+https://github.com/italic/base-project.git"
   },
   "keywords": [
     "npm",
@@ -20,9 +20,9 @@
   "author": "italic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/italic/kreator/issues"
+    "url": "https://github.com/italic/base-project/issues"
   },
-  "homepage": "https://github.com/italic/kreator#readme",
+  "homepage": "https://github.com/italic/base-project#readme",
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",
