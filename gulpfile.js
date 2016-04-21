@@ -12,6 +12,7 @@ gulp.task("scripts:vendors", require(paths.sources.tasks + "scripts").vendors);
 gulp.task("scripts:plugins", require(paths.sources.tasks + "scripts").plugins);
 gulp.task("scripts:main", require(paths.sources.tasks + "scripts").main);
 gulp.task("scripts", ["scripts:vendors", "scripts:plugins", "scripts:main"]);
+gulp.task("sprites", require(paths.sources.tasks + "sprites"));
 gulp.task("images", require(paths.sources.tasks + "images"));
 gulp.task("icons", require(paths.sources.tasks + "icons"));
 
@@ -19,6 +20,7 @@ gulp.task("icons", require(paths.sources.tasks + "icons"));
 gulp.task("build", [
 	"styles",
 	"scripts",
+	"sprites",
 	"fonts",
 	"images",
 	"icons"
