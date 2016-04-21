@@ -1,8 +1,8 @@
 /*!
- * Main JS file script for Zesto
+ * Main JS file script for 
  */
 
-var zesto = (function($) {
+var project = (function($) {
 	'use strict';
 
 	var init = function() {
@@ -15,5 +15,5 @@ var zesto = (function($) {
 })(jQuery);
 
 $(function() {
-	zesto.init();
+	project.init();
 });
