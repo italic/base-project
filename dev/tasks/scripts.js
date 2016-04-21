@@ -12,7 +12,7 @@ var livereload = require("gulp-livereload");
 var paths = require("./paths");
 var opts = require("./options");
 
-module.exports =  {
+module.exports = {
 	vendors: function() {
 		return gulp.src(paths.sources.scripts + "vendors/*.js")
 			.pipe(opts.plumber ? plumber() : util.noop())

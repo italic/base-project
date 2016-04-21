@@ -15,7 +15,7 @@ var opts = require("./options");
  * task stylesheets
  */
 module.exports = function() {
-	return gulp.src(paths.sources.style + "main.styl")
+	return gulp.src(paths.sources.styles + "main.styl")
 		.pipe(opts.plumber ? plumber() : util.noop())
 		.pipe(opts.minify ? sourcemaps.init() : util.noop())
 		.pipe(filesize())

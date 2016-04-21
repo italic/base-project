@@ -9,8 +9,10 @@ var livereload = require("gulp-livereload");
 * used for development
 */
 module.exports = function() {
+	gulp.watch(paths.sources.scripts + "vendors/*.js", ["scripts:vendors"]);
+	gulp.watch(paths.sources.scripts + "plugins/*.js", ["scripts:plugins"]);
 	gulp.watch(paths.sources.scripts + "*.js", ["scripts:main"]);
-	gulp.watch(paths.sources.style + "main.styl", ["style"]);
+	gulp.watch(paths.sources.styles + "**/*.styl", ["styles"]);
 
 	gulp.watch([paths.dist.public + "/**/*"], livereload);
 };
