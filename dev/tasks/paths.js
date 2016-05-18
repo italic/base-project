@@ -12,12 +12,13 @@ module.exports = {
 		sprites: './dev/sprites/'
 	},
 	dist: {
-		public: './../www/markup/',
-		styles: './../www/markup/assets/css/',
-		scripts: './../www/markup/assets/js/',
-		fonts: './../www/markup/assets/fonts/',
-		images: './../www/markup/assets/images/',
-		maps: './../www/markup/assets/maps/'
+		public: './www/',
+		styles: './www/assets/css/',
+		scripts: './www/assets/js/',
+		fonts: './www/assets/fonts/',
+		sprites: './www/assets/sprites/',
+		images: './www/assets/images/',
+		maps: './www/assets/maps/'
 	},
 	tmp: './tmp/'
 };

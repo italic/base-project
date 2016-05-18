@@ -5,7 +5,7 @@ var options = {};
 var defaults = {
 	debug: true,
 	plumber: true,
-	minify: false
+	minify: true
 };
 
 // set some defaults options depending on some flags

@@ -8,7 +8,6 @@ var filesize = require("gulp-filesize");
 var sourcemaps = require("gulp-sourcemaps");
 var livereload = require("gulp-livereload");
 
-
 var paths = require("./paths");
 var opts = require("./options");
 

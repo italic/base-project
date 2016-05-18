@@ -14,13 +14,16 @@ gulp.task("scripts:main", require(paths.sources.tasks + "scripts").main);
 gulp.task("scripts", ["scripts:vendors", "scripts:plugins", "scripts:main"]);
 gulp.task("sprites", require(paths.sources.tasks + "sprites"));
 gulp.task("images", require(paths.sources.tasks + "images"));
-gulp.task("icons", require(paths.sources.tasks + "icons"));
+gulp.task("icons:svg", require(paths.sources.tasks + "icons").svg);
+gulp.task("icons:png", require(paths.sources.tasks + "icons").png);
+gulp.task("icons", ["icons:svg", "icons:png"]);
 
 // build
 gulp.task("build", [
 	"styles",
 	"scripts",
 	"sprites",
+	"icons",
 	"fonts",
 	"images",
 	"icons"
