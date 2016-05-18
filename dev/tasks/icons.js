@@ -3,7 +3,6 @@ var opts = require("./options");
 var util = require("gulp-util");
 var gulpif = require("gulp-if");
 var plumber = require("gulp-plumber");
-var svg2png = require('gulp-svg2png');
 var svgSymbols = require("gulp-svg-symbols");
 
 var paths = require("./paths");
@@ -24,7 +23,6 @@ module.exports = {
 	png: function() {
 		return gulp.src(paths.sources.icons + "*.svg")
 			.pipe(opts.plumber ? plumber() : util.noop())
-			.pipe(svg2png())
 			.pipe(gulp.dest(paths.dist.images + "pictos/"));
 	}
 };
