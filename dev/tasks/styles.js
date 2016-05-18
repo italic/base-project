@@ -4,6 +4,7 @@ var stylus = require("gulp-stylus");
 var rename = require("gulp-rename");
 var plumber = require("gulp-plumber");
 var filesize = require("gulp-filesize");
+var koutoSwiss = require("kouto-swiss");
 var sourcemaps = require("gulp-sourcemaps");
 var livereload = require("gulp-livereload");
 var autoprefixer = require("gulp-autoprefixer");
@@ -20,7 +21,7 @@ module.exports = function() {
 		.pipe(opts.minify ? sourcemaps.init() : util.noop())
 		.pipe(filesize())
 		.pipe(stylus(
-			opts.minify ? { compress: true } : {}
+			opts.minify ? { compress: true, use: koutoSwiss() } : { use: koutoSwiss() }
 		))
 		.pipe(autoprefixer({
 			browsers: ["last 3 versions"],
