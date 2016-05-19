@@ -12,8 +12,8 @@ module.exports = {
 		return gulp.src(paths.sources.icons + "*.svg")
 			.pipe(opts.plumber ? plumber() : util.noop())
 			.pipe(svgSymbols({
-				svgId: "rci-%f",
-				className: ".rci-icon-%f",
+				svgId: "%f",
+				className: ".icon-%f",
 				fontSize: 512
 			}))
 			//.pipe(gulp.dest(paths.source.fonts + "rci-icons/"));
