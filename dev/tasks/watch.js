@@ -11,6 +11,7 @@ var livereload = require("gulp-livereload");
 module.exports = function() {
 	livereload.listen();
 
+	gulp.watch([paths.sources.markup + "**/*.pug", paths.sources.markup + "**/*.md"], ["markup"]);
 	gulp.watch(paths.sources.scripts + "vendors/*.js", ["scripts:vendors"]);
 	gulp.watch(paths.sources.scripts + "plugins/*.js", ["scripts:plugins"]);
 	gulp.watch(paths.sources.scripts + "*.js", ["scripts:main"]);

@@ -7,6 +7,7 @@ gulp.task("clean", require(paths.sources.tasks + "clean"));
 gulp.task("fonts", require(paths.sources.tasks + "fonts"));
 
 // generated assets
+gulp.task("markup", require(paths.sources.tasks + "markup"));
 gulp.task("styles", require(paths.sources.tasks + "styles"));
 gulp.task("scripts:vendors", require(paths.sources.tasks + "scripts").vendors);
 gulp.task("scripts:plugins", require(paths.sources.tasks + "scripts").plugins);
@@ -20,6 +21,7 @@ gulp.task("icons", ["icons:svg", "icons:png"]);
 
 // build
 gulp.task("build", [
+	"markup",
 	"styles",
 	"scripts",
 	"sprites",
