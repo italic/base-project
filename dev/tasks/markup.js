@@ -13,7 +13,7 @@ var opts = require("./options");
  * task markup
  */
 module.exports = function() {
-	return gulp.src([paths.sources.markup + "**/*.pug", paths.sources.markup + "**/*.md"])
+	return gulp.src(paths.sources.markup + "*.pug")
 		.pipe(opts.plumber ? plumber() : util.noop())
 		.pipe(filesize())
 		.pipe(pug({
