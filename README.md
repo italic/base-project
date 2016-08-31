@@ -1,6 +1,25 @@
-![version](https://img.shields.io/badge/version-0.1.0-orange.svg?style=flat-square)
-![status](https://img.shields.io/badge/status-beta-yellow.svg?style=flat-square)
+![version](https://img.shields.io/badge/version-1.0.0-green.svg?style=flat-square)
 ![madewith](https://img.shields.io/badge/made%20with-gulp-brightgreen.svg?style=flat-square)
 
-# base-project
-This is a base project for simple cases websites, with a basic setting for gulp, stylus, javascript.
+# [MJML](https://mjml.io)
+
+
+## Installer MJML et gulp si ce n’est pas déjà fait
+
+```bash
+sudo npm i -g mjml gulp-cli
+```
+
+## Installer le projet
+
+```bash
+sudo npm i
+```
+
+## Travailler !
+
+```bash
+npm run start
+```
+
+Lance automatiquement un premier build, puis un `gulp watch`
