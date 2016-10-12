@@ -1,12 +1,33 @@
 @import "../../node_modules/kouto-swiss"
 
-@import "utils/variables.styl"
-@import "utils/animations.styl"
-@import "utils/mixins.styl"
-@import "utils/fonts.styl"
+// ITCSS architecture
 
-@import "vendors/normalize.styl"
-@import "vendors/slick.styl"
-@import "vendors/slick-theme.styl"
+// 1. Settings
+@require 'settings/variables.styl'
 
-@import "modules/*.styl"
+// 2. Tools
+@require 'tools/mixins.styl'
+@require 'tools/fonts.styl'
+
+// 3. Generic
+@require 'generic/reset.styl'
+@require 'generic/normalize.styl'
+
+// 4. Base
+@require 'base/base.styl'
+@require 'base/animations.styl'
+
+// 5. Objects
+@require 'objects/grid.styl'
+
+// 6. Components
+@require 'components/layout/header.styl'
+@require 'components/layout/menu.styl'
+@require 'components/layout/footer.styl'
+
+@require 'components/modules/forms.styl'
+
+@require 'components/pages/home.styl'
+
+// 7. Helpers
+@require 'helpers/helpers.styl'

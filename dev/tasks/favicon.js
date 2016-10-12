@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var util = require("gulp-util");
+var gulp = require('gulp')
+var util = require('gulp-util')
 
-var paths = require("./paths");
+var paths = require('./paths')
 
 module.exports = function() {
 	return gulp.task('generate-favicon', function(done) {
@@ -40,7 +40,7 @@ module.exports = function() {
 				errorOnImageTooSmall: false
 			}
 		}, function() {
-			done();
-		});
-	});
-};
+			done()
+		})
+	})
+}

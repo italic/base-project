@@ -1,5 +1,5 @@
-var gulp = require("gulp");
-var livereload = require("gulp-livereload");
+var gulp = require('gulp')
+var livereload = require('gulp-livereload')
 
 module.exports = {
-};
+}

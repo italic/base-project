@@ -23,4 +23,4 @@ module.exports = {
 		maps: './../www/assets/maps/'
 	},
 	tmp: './tmp/'
-};
+}

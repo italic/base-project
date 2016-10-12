@@ -1,6 +1,6 @@
-var gulp = require("gulp");
-var paths = require("./paths");
-var livereload = require("gulp-livereload");
+var gulp = require('gulp')
+var paths = require('./paths')
+var livereload = require('gulp-livereload')
 
 /**
 * watch task
@@ -8,13 +8,13 @@ var livereload = require("gulp-livereload");
 * watch sources to dynamically build files whenever it's needed
 * used for development
 */
-module.exports = function() {
-	livereload.listen();
+module.exports = function () {
+	livereload.listen()
 
-	gulp.watch([paths.sources.markup + "**/*.pug", paths.sources.markup + "**/*.md"], ["markup"]);
-	gulp.watch(paths.sources.scripts + "vendors/*.js", ["scripts:vendors"]);
-	gulp.watch(paths.sources.scripts + "plugins/*.js", ["scripts:plugins"]);
-	gulp.watch(paths.sources.scripts + "*.js", ["scripts:main"]);
-	gulp.watch(paths.sources.styles + "**/*.styl", ["styles"]);
-	gulp.watch([paths.dist.public + "/**/*"], livereload);
-};
+	gulp.watch([paths.sources.markup + '**/*.pug', paths.sources.markup + '**/*.md'], ['markup'])
+	gulp.watch(paths.sources.scripts + 'vendors/*.js', ['scripts:vendors'])
+	gulp.watch(paths.sources.scripts + 'plugins/*.js', ['scripts:plugins'])
+	gulp.watch(paths.sources.scripts + '*.js', ['scripts:main'])
+	gulp.watch(paths.sources.styles + '**/*.styl', ['styles'])
+	gulp.watch([paths.dist.public + '/**/*'], livereload)
+}
