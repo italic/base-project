@@ -17,7 +17,7 @@ module.exports = {
 		markup: './../www/',
 		styles: './../www/assets/css/',
 		scripts: './../www/assets/js/',
-		fonts: './../www/assets/fonts/',
+		fonts: './../www/assets/',
 		sprites: './../www/assets/sprites/',
 		images: './../www/assets/images/',
 		maps: './../www/assets/maps/'
