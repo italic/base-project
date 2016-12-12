@@ -8,7 +8,7 @@ var paths = require('./paths')
 
 module.exports = function () {
 	return gulp.src(paths.sources.images + '**/*')
-		.pipe(changed(path.dist.images))
+		.pipe(changed(paths.dist.images))
 		.pipe(cache(imagemin()))
 		.pipe(gulp.dest(paths.dist.images))
 }
